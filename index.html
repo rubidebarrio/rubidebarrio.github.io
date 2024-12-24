@@ -1,90 +1,66 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="styles/ripper_paper.css">
+<link rel="stylesheet" href="styles/index.css">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rubi de Barrio</title>
+    <link rel="icon" href="assets/favicon_estrellita.png" type="image/png">
+    
+
     <style>
-        body {
-            background-color: #cbc8e5;
-            font-family: Arial, sans-serif;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            padding-top: 60px; /* Adjust for fixed header */
-        }
-        h1 {
-            color: #cb0e3c;
-        }
-        header {
-            background-color: #fff;
-            width: 100%;
-            padding: 10px 0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        nav a {
-            color: #333;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        nav a:hover {
-            color: #cb0e3c;
-        }
-        #descripcion {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: #fff;
-            padding: 10px 0;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+        
     </style>
 </head>
+
+
 <body>
     <header>
         <nav>
-            <h1>Rubi de Barrio</h1>
+            <img src="assets/header.png" alt="Rubi de Barrio" style="max-height: 70px;">
+            <!-- <h1>Rubi de Barrio</h1> -->
             <div>
                 <a href="#personajes">Personajes</a>
                 <a href="#equipo">Equipo</a>
             </div>
         </nav>
     </header>
+
+    
     <div>
-        <p id="descripcion">
-            Los protagonistas del Cabaret Rubí participan en el simulacro 
-            “cómo librarse de un cadáver". Una realidad completamente 
-            improbable, ¿no? 🌟
-        </p>
+        <p>El bodegón más vistoso en bucle</p>
+        <div>            
+            <iframe
+                width="560" height="315" frameborder="0" allowfullscreen
+                iv_load_policy="3"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?modestbranding=1&rel=0&iv_load_policy=3&controls=0" 
+                origin="RubideBarrio" widget_referrer="RubideBarrio"></iframe>
+        </div>
+        <p>creado por x & x</p>
     </div>
-    <footer>
-        <p>🚧 Work in progress 🚧</p>
-        <p>&copy; <span id="year"></span></p>
-        <script>
-            document.getElementById('year').textContent = new Date().getFullYear();
-        </script>
+    
+    
+    
+    <!-- Placeholder for footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    
+    <footer class="footer">
+        <div class="corner">
+            <div class="layer layer1"></div>
+            <div class="layer layer2"></div>
+            <div class="layer layer3"></div>
+        </div>
+        <p>&copy; 2024</p>
     </footer>
+    
+    
 </body>
 </html>
