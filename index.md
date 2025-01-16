@@ -13,11 +13,19 @@ permalink: /
     
 
     <style>
-        /* Add some basic styling */
-
-    
         #video-container {
             display: none;
+        }
+        main {
+            margin: 100px 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2em;
+            color: #ff0000;
+            padding: 1em 0;
         }
     </style>
 </head>
@@ -26,8 +34,9 @@ permalink: /
 <body>
 
     
+    <h1>El bodegón más vistoso en bucle</h1>
+
     <div>
-        <p>El bodegón más vistoso en bucle</p>
         <div id="password-container">
             <input type="password" id="password" placeholder="Enter password">
             <button onclick="checkPassword()">Submit</button>
@@ -60,7 +69,7 @@ permalink: /
     </script>
     
     
-    <h2>FOTOS RODAJE</h2>
+    <h1>FOTOS RODAJE</h1>
 
     <style>
         .polaroid {
