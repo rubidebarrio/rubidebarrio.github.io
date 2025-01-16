@@ -1,5 +1,7 @@
-<!DOCTYPE html>
-<link rel="stylesheet" href="styles/ripper_paper.css">
+---
+layout: none
+---
+
 <link rel="stylesheet" href="styles/index.css">
 <html lang="en">
 <head>
@@ -36,7 +38,6 @@
             <!-- <h1>Rubi de Barrio</h1> -->
             <div>
                 <a href="#personajes">Personajes</a>
-                <a href="#equipo">Equipo</a>
             </div>
         </nav>
     </header>
@@ -64,12 +65,6 @@
     <div id="footer-placeholder"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <script>
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            });
-
         function checkPassword() {
             const password = document.getElementById('password').value;
             const hashedPassword = CryptoJS.SHA256(password).toString();
@@ -84,15 +79,17 @@
         }
     </script>
     
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="corner">
             <div class="layer layer1"></div>
             <div class="layer layer2"></div>
             <div class="layer layer3"></div>
         </div>
         <p>&copy; 2024</p>
-    </footer>
+    </footer> -->
     
     
 </body>
 </html>
+
+{% include footer.html %}
