@@ -1,5 +1,6 @@
 ---
-layout: none
+layout: base
+permalink: /
 ---
 
 <link rel="stylesheet" href="styles/index.css">
@@ -18,29 +19,11 @@ layout: none
         #video-container {
             display: none;
         }
-    
-        footer {
-            margin-top: auto;
-            background-color: #f1f1f1;
-            padding: 20px;
-            position: fixed;
-            bottom: 0;
-            right: 0;
-        }
     </style>
 </head>
 
 
 <body>
-    <header>
-        <nav>
-            <img src="assets/header.png" alt="Rubi de Barrio" style="max-height: 70px;">
-            <!-- <h1>Rubi de Barrio</h1> -->
-            <div>
-                <a href="#personajes">Personajes</a>
-            </div>
-        </nav>
-    </header>
 
     
     <div>
@@ -51,7 +34,7 @@ layout: none
         </div>
         <div id="video-container"> 
             <iframe
-                width="560" height="315" frameborder="0" allowfullscreen
+                max-width="560" height="315" frameborder="0" allowfullscreen
                 iv_load_policy="3"
                 src="https://www.youtube.com/embed/ngMNZAJsP0c?modestbranding=1&rel=0&controls=0"
                 origin="RubideBarrio" widget_referrer="RubideBarrio"></iframe>
@@ -59,10 +42,7 @@ layout: none
         <p>creado por x & x</p>
     </div>
     
-    
-    
-    <!-- Placeholder for footer -->
-    <div id="footer-placeholder"></div>
+        
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <script>
         function checkPassword() {
@@ -79,17 +59,63 @@ layout: none
         }
     </script>
     
-    <!-- <footer class="footer">
-        <div class="corner">
-            <div class="layer layer1"></div>
-            <div class="layer layer2"></div>
-            <div class="layer layer3"></div>
-        </div>
-        <p>&copy; 2024</p>
-    </footer> -->
     
+    <h2>FOTOS RODAJE</h2>
+
+    <style>
+        .polaroid {
+            background-color: white;
+            padding: 10px;
+            padding-bottom: 50px;
+            margin: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: calc(33.333% - 40px);
+        }
+
+        .polaroid img {
+            width: 100%;
+            height: auto;
+        }
+        .polaroid {
+            max-width: 200px;
+        }
+
+        .polaroid-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .polaroid {
+                width: calc(50% - 40px);
+            }
+        }
+    </style>
+
+    <div class="polaroid-container">
+        <div class="polaroid" style="transform: rotate(2deg);">
+            <img src="assets/cat0.jpeg" alt="Cat 0">
+        </div>
+        <div class="polaroid" style="transform: rotate(0deg);">
+            <img src="assets/cat1.jpeg" alt="Cat 1">
+        </div>
+        <div class="polaroid" style="transform: rotate(-0.5deg);">
+            <img src="assets/cat0.jpeg" alt="Cat 0">
+        </div>
+        <div class="polaroid" style="transform: rotate(0.7deg);">
+            <img src="assets/cat1.jpeg" alt="Cat 1">
+        </div>
+        <div class="polaroid" style="transform: rotate(-1deg);">
+            <img src="assets/cat0.jpeg" alt="Cat 0">
+        </div>
+        <div class="polaroid" style="transform: rotate(-1deg);">
+            <img src="assets/cat1.jpeg" alt="Cat 1">
+        </div>
+    </div>
+
     
 </body>
 </html>
 
-{% include footer.html %}
