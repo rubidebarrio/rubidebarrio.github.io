@@ -7,9 +7,12 @@ permalink: /
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta property="og:image" content="assets\tablero_cluedo.png"/>
+    <meta property="twitter:image" content="assets\tablero_cluedo.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rubi de Barrio</title>
-    <link rel="icon" href="assets/favicon_estrellita.png" type="image/png">
+    <link rel="icon" type="image/png" href="assets/favicon_estrellita.png">
+    <link rel="shortcut icon" id="favicon" type="image/png" href="assets/favicon_estrellita.png">
     
 
     <style>
