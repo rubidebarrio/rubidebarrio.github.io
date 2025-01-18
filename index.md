@@ -15,7 +15,7 @@ permalink: /
             font-family: 'Courier New', Courier, monospace;
             font-size: 2em;
             color: #ff0000;
-            padding: 3em 0 0.5em;
+            padding: 1.5em 0 0.5em;
         }
     </style>
 
@@ -120,6 +120,7 @@ permalink: /
             flex-wrap: wrap;
             justify-content: center;
             max-width: 900px;
+            margin: 0 auto;
         }
 
         @media (max-width: 768px) {
