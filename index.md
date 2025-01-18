@@ -3,24 +3,11 @@ layout: base
 permalink: /
 ---
 
-<link rel="stylesheet" href="styles/index.css">
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta property="og:image" content="assets\tablero_cluedo.png"/>
-    <meta property="twitter:image" content="assets\tablero_cluedo.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rubi de Barrio</title>
-    <link rel="icon" type="image/png" href="assets/favicon_estrellita.png">
-    <link rel="shortcut icon" id="favicon" type="image/png" href="assets/favicon_estrellita.png">
-    
 
+<body>
     <style>
         #video-container {
             display: none;
-        }
-        main {
-            margin: 100px 0;
         }
 
         h1 {
@@ -28,21 +15,32 @@ permalink: /
             font-family: 'Courier New', Courier, monospace;
             font-size: 2em;
             color: #ff0000;
-            padding: 1em 0;
+            padding: 3em 0 0.5em;
         }
     </style>
-</head>
-
-
-<body>
 
     
+    <!-- ################################################################## -->
     <h1>El bodegón más vistoso en bucle</h1>
+    <div>
+        <img src="assets/bucle_bodegones-7.gif" alt="Bucle Bodegones"
+            style="max-width: 600px; width: 80%;">
+        <p>creado por Paula Mañero & Paula Sanz</p>
+    </div>
+
+
+    <div>
+        <img 
+            src="assets/tablero_cluedo.png" alt="Bucle Bodegones"
+            style="width: 80vw;"
+        >
+    </div>
+
 
     <div>
         <div id="password-container">
-            <input type="password" id="password" placeholder="Enter password">
-            <button onclick="checkPassword()">Submit</button>
+            <input class="rubi_input" type="password" id="password" placeholder="Enter password">
+            <button class="rubi_btn" onclick="checkPassword()">Submit</button>
         </div>
         <div id="video-container"> 
             <iframe
@@ -51,7 +49,6 @@ permalink: /
                 src="https://www.youtube.com/embed/ngMNZAJsP0c?modestbranding=1&rel=0&controls=0"
                 origin="RubideBarrio" widget_referrer="RubideBarrio"></iframe>
         </div>
-        <p>creado por x & x</p>
     </div>
     
         
@@ -70,8 +67,33 @@ permalink: /
             }
         }
     </script>
+
+
+    <!-- ################################################################## -->
+    <h1>DESCRIPCIÓN</h1>
+    <p>resumen del proyecto</p>
+
+
+
+    <!-- ################################################################## -->
+    <h1>SINOPSIS</h1>
+    <p>bla</p>
+    <div>
+        <img 
+            src="assets/figuritas_personajes.png" alt="Personajes"
+            style="width: 100%; filter: drop-shadow(0px 4px 8px #0006);"
+        >
+    </div>
+
+    
+
+    <!-- ################################################################## -->
+    <h1>¿QUIENES SOMOS?</h1>
+    <p>Texto de presentación</p>
     
     
+
+    <!-- ################################################################## -->
     <h1>FOTOS RODAJE</h1>
 
     <style>
@@ -97,11 +119,12 @@ permalink: /
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            max-width: 900px;
         }
 
         @media (max-width: 768px) {
             .polaroid {
-                width: calc(50% - 40px);
+                width: 35%;
             }
         }
     </style>
@@ -129,5 +152,4 @@ permalink: /
 
     
 </body>
-</html>
 
