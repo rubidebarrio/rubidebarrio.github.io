@@ -1,3 +1,6 @@
+html, body {
+    height: 100%;
+}
 body {
     background-color: #cbc8e5;
     margin: 0;
@@ -13,8 +16,10 @@ main {
     align-items: center;
     text-align: center;
 }
-h1 {
-    color: #cb0e3c;
+.wrapper {
+    width: 100%;
+    margin: 0 10vw;
+    min-height: 50vh;
 }
 nav {
     display: flex;
@@ -37,7 +42,23 @@ nav a:hover {
     margin: 0 auto;
 }
 
+div {
+    margin: 20px 0;
+}
 
+/* ************************************* */
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    color: #cb0e3c;
+    padding: 1.5em 0 0.5em;
+}
+h1, h2, h3, h4, h5, h6, a, p {
+    font-family: Courier, monospace;
+}
+
+/* ************************************* */
 .rubi_btn {
     background-color: #C51040;
     border-radius: 7px;

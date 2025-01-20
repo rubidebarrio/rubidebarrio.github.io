@@ -5,26 +5,11 @@ permalink: /
 
 
 <body>
-    <style>
-        #video-container {
-            display: none;
-        }
-
-        h1 {
-            text-align: center;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 2em;
-            color: #ff0000;
-            padding: 1.5em 0 0.5em;
-        }
-    </style>
-
-    
     <!-- ################################################################## -->
     <h1>El bodegón más vistoso en bucle</h1>
     <div>
         <img src="assets/bucle_bodegones-7.gif" alt="Bucle Bodegones"
-            style="max-width: 600px; width: 80%;">
+            style="max-width: 720px; width: 80%;">
         <p>creado por Paula Mañero & Paula Sanz</p>
     </div>
 
@@ -35,38 +20,6 @@ permalink: /
             style="width: 80vw;"
         >
     </div>
-
-
-    <div>
-        <div id="password-container">
-            <input class="rubi_input" type="password" id="password" placeholder="Enter password">
-            <button class="rubi_btn" onclick="checkPassword()">Submit</button>
-        </div>
-        <div id="video-container"> 
-            <iframe
-                max-width="560" height="315" frameborder="0" allowfullscreen
-                iv_load_policy="3"
-                src="https://www.youtube.com/embed/ngMNZAJsP0c?modestbranding=1&rel=0&controls=0"
-                origin="RubideBarrio" widget_referrer="RubideBarrio"></iframe>
-        </div>
-    </div>
-    
-        
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
-    <script>
-        function checkPassword() {
-            const password = document.getElementById('password').value;
-            const hashedPassword = CryptoJS.SHA256(password).toString();
-            const correctHashedPassword = '6c179f21e6f62b629055d8ab40f454ed02e48b68563913473b857d3638e23b28';
-
-            if (hashedPassword === correctHashedPassword) {
-                document.getElementById('video-container').style.display = 'block';
-                document.getElementById('password-container').style.display = 'none';
-            } else {
-                alert('Incorrect password. Please try again.');
-            }
-        }
-    </script>
 
 
     <!-- ################################################################## -->
