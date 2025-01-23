@@ -27,7 +27,7 @@ title: Rubi de Barrio
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  rubidebarrio
 
 # Build settings
 theme: minima
@@ -37,7 +37,7 @@ plugins:
 
 
 # Pagination
-paginate: 2
+# paginate: 2
 paginate_path: "/blog/page:num/"
 
 host: 0.0.0.0

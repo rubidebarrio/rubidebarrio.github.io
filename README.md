@@ -15,6 +15,6 @@ bundle exec jekyll serve
 
 ---
 
-[Rubi de Barrio](rubidebarrio.github.io)
+[Rubi de Barrio](https://rubidebarrio.github.io/)
 
 </footer>
