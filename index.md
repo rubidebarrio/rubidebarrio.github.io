@@ -8,8 +8,11 @@ permalink: /
     <!-- ################################################################## -->
     <h1>El bodegón más vistoso en bucle</h1>
     <div>
-        <img src="assets/bucle_bodegones-7.gif" alt="Bucle Bodegones" style="max-width: 720px; width: 80%;">
-        <p>Rubí de Barrio es una serie de género comedia/misterio creada por Paula Mañeru y Paula Sanz.</p>
+        <img src="assets/bucle_bodegones-7.gif" alt="Bucle Bodegones" style="max-width: 720px; width: 90%;">
+        <p class="descripcion">
+            Rubí de Barrio es una serie de género comedia/misterio
+            creada por Paula Mañeru y Paula Sanz.
+        </p>
     </div>
 
 

@@ -37,10 +37,6 @@ nav a {
 nav a:hover {
     color: #cb0e3c;
 }
-#descripcion {
-    max-width: 600px;
-    margin: 0 auto;
-}
 
 div {
     margin: 20px 0;
@@ -56,6 +52,15 @@ h1 {
 }
 h1, h2, h3, h4, h5, h6, a, p {
     font-family: Courier, monospace;
+    padding: 1.5em 0 0.5em;
+}
+
+body p {
+    max-width: 60ch;
+    justify-self: center;
+    text-align: center;
+    margin: 0 auto;
+    word-break: break-word;
 }
 
 /* ************************************* */
