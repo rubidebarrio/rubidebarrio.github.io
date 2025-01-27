@@ -8,7 +8,7 @@ permalink: /
     <!-- ################################################################## -->
     <h1>El bodegón más vistoso en bucle</h1>
     <div>
-        <img src="assets/bucle_bodegones-7.gif" alt="Bucle Bodegones" style="max-width: 720px; width: 90%;">
+        <img src="assets/bodegones-bucle.gif" alt="Bucle Bodegones" style="max-width: 720px; width: 90%;">
         <p class="descripcion">
             Rubí de Barrio es una serie de género comedia/misterio
             creada por Paula Mañeru y Paula Sanz.
@@ -48,13 +48,13 @@ permalink: /
         Madrid para formarme como actriz y compaginarlo con la carrera de Comunicación Audiovisual en la UC3M. Siempre
         he tenido inquietud por sacar adelante proyectos propios desde las obras del grupo de teatro a pequeños
         cortometrajes. Recientemente, he trabajado para el equipo de Dirección de Cuéntame Cómo Pasó (T22, T23) y Sueños
-        de Libertad."</p>
+        de Libertad.</p>
 
-    <p>"Yo soy Paula (Sanz). Desde pequeña soñaba con habitar mundos de fantasía y eso me llevó a creer que quería ser
+    <p>Yo soy Paula (Sanz). Desde pequeña soñaba con habitar mundos de fantasía y eso me llevó a creer que quería ser
         actriz, así que hice teatro hasta que me di cuenta de que prefería crear esos mundos. Tras estudiar Relaciones
         Internacionales, decidí viajar a Inglaterra para estudiar Comunicación y Producción Audiovisual, un país en el
         que sigo residiendo y trabajando en el ámbito de la producción. Sueños por alcanzar ya solo me quedan rodar
-        nuestra serie y conocer a una jirafa."
+        nuestra serie y conocer a una jirafa.
     </p>
 
 
