@@ -1,3 +1,10 @@
+
+:root {
+    --clr_dark: #141a26;
+    --clr_light: #d9e0e6;
+    --max_width_1: 1500px;
+}
+
 html, body {
     height: 100%;
 }
@@ -18,14 +25,20 @@ main {
 }
 .wrapper {
     width: 100%;
+    min-height: 80vh;
+    
     margin: 0 10vw;
-    min-height: 50vh;
+    max-width: var(--max_width_1);
+    justify-items: center;
+}
+section {
+    margin-bottom: 5em;
 }
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: var(--max_width_1);
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -36,10 +49,6 @@ nav a {
 }
 nav a:hover {
     color: #cb0e3c;
-}
-
-div {
-    margin: 20px 0;
 }
 
 /* ************************************* */
@@ -56,7 +65,7 @@ h1, h2, h3, h4, h5, h6, a, p {
 }
 
 body p {
-    max-width: 60ch;
+    max-width: 90ch;
     justify-self: center;
     text-align: center;
     margin: 0 auto;
