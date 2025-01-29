@@ -143,35 +143,32 @@ permalink: /
         .slideshow-container {
             display: flex;
             overflow-x: auto;
-            /* scroll-snap-type: x mandatory; */
             -webkit-overflow-scrolling: touch;
             width: 100vw;
         }
-
+    
         .slide {
             flex: 0 0 auto;
-            width: 100vw;
-            scroll-snap-align: start;
+            height: max(30vh, 30vw);
         }
-
+    
         .slide img {
-            width: inherit;
-            height: auto;
+            height: 100%;
+            scrollbar-width: none; /* For Firefox */
+            -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+            width: auto;
             display: block;
         }
     </style>
 
     <section class="slideshow-container">
-        <div class="slide">
-            <img src="assets/polaroid/slide1.png" alt="Slide 1">
-        </div>
-        <div class="slide">
-            <img src="assets/polaroid/slide2.png" alt="Slide 2">
-        </div>
-        <div class="slide">
-            <img src="assets/polaroid/slide3.png" alt="Slide 3">
-        </div>
-    </div>
+        <img class="slide" src="assets/polaroid/slide1.png" alt="Polaroid slide 1">
+        <img class="slide" src="assets/polaroid/slide2.png" alt="Polaroid slide 2">
+        <img class="slide" src="assets/polaroid/slide3.png" alt="Polaroid slide 3">
+        <img class="slide" src="assets/polaroid/slide4.png" alt="Polaroid slide 4">
+        <img class="slide" src="assets/polaroid/slide5.png" alt="Polaroid slide 5">
+        <img class="slide" src="assets/polaroid/slide6.png" alt="Polaroid slide 6">
+    </section>
 
     <script>
         const slideshowContainer = document.querySelector('.slideshow-container');
