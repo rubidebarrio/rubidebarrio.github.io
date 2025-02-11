@@ -1,32 +1,38 @@
 ---
-layout: base
+layout: base_no_header
 permalink: /
 ---
 
 
 <body>
+    <header>
+        <nav>
+            <a href="/">
+                <img src="assets/header.png" alt="Rubi de Barrio" style="max-height: 70px;">
+            </a>
+            
+            <div>
+                <a href="/teaser">Teaser</a>
+            </div>
+        </nav>
+    </header>
+
+
     <!-- ################################################################## -->
-    <section id="test"
-        style="margin: 0; background-color: black; height: 100vh; display: flex; justify-content: center; align-items: center;">
-        <img src="assets/bodegones_bucle2.gif" alt="Bucle Bodegones" id="bucle-bodegones"
-            style="width: 100vw; min-width: min(720px, 80vw);">
-        <!-- <script>
-            window.addEventListener('scroll', function() {
-            const img = document.getElementById('bucle-bodegones');
-            const scrollY = window.scrollY;
-            const minWidth = 500; // Minimum width in pixels
-            const maxWidth = window.innerWidth; // Maximum width is the full width
-            const newWidth = Math.max(minWidth, maxWidth - scrollY);
-            img.style.width = newWidth + 'px';
-            });
-        </script> -->
-
-        <!-- <p class="descripcion" style="color: #e0e0e0">
-            Rubí de Barrio es una serie de género comedia/misterio
-            creada por Paula Mañeru y Paula Sanz.
-        </p> -->
-
+    <section class="hero">
+        <img class="hero-video" src="assets/bodegones_bucle1.gif" alt="Bucle Bodegones">
+        <div class="hero-overlay"></div>
+        <!-- <div class="hero-content">
+            <h1>Rubí de Barrio</h1>
+            <p>Una serie de género comedia/misterio creada por Paula Mañeru y Paula Sanz.</p>
+        </div> -->
     </section>
+    
+    <!-- <section id="test"
+        style="margin: 0; background-color: black; height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <img src="assets/bodegones_bucle1.gif" alt="Bucle Bodegones" id="bucle-bodegones"
+            style="width: 100vw; min-width: min(720px, 80vw);">
+    </section> -->
 
 
     <div>
