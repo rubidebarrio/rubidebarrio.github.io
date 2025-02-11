@@ -64,7 +64,7 @@ permalink: /
             y de las torpes estrategias de sus compañeros. El espectáculo debe continuar, ¿no?</p>
         <div>
             <img src="assets/figuritas_personajes.png" alt="Personajes"
-                style="width: 100vw; filter: drop-shadow(0px 4px 8px #0006); max-width: 1200px;">
+                style="width: 100%; filter: drop-shadow(0px 4px 8px #0006); max-width: 1200px;">
         </div>
     </section>
 
@@ -137,7 +137,7 @@ permalink: /
             display: flex;
             overflow-x: auto;
             scrollbar-width: none;
-            width: 100vw;
+            width: 100%;
             -webkit-overflow-scrolling: touch;
         }
 
