@@ -20,23 +20,19 @@ permalink: /
 
     <!-- ################################################################## -->
     <section class="hero">
-        <img class="hero-video" src="assets/bodegones_bucle1.gif" alt="Bucle Bodegones">
+        <div class="parallax-container">
+            <img class="hero-video" src="assets/bodegones_bucle1.gif" alt="Bucle Bodegones">
+        </div>
         <div class="hero-overlay"></div>
         <!-- <div class="hero-content">
             <h1>Rubí de Barrio</h1>
             <p>Una serie de género comedia/misterio creada por Paula Mañeru y Paula Sanz.</p>
         </div> -->
     </section>
-    
-    <!-- <section id="test"
-        style="margin: 0; background-color: black; height: 100vh; display: flex; justify-content: center; align-items: center;">
-        <img src="assets/bodegones_bucle1.gif" alt="Bucle Bodegones" id="bucle-bodegones"
-            style="width: 100vw; min-width: min(720px, 80vw);">
-    </section> -->
 
 
     <div>
-        <img src="assets/tablero_cluedo.png" alt="Bucle Bodegones" style="width: 80vw;">
+        <img src="assets/tablero_cluedo.png" alt="Bucle Bodegones" style="width: 90vw; max-width: 100rem;">
     </div>
 
 
@@ -68,7 +64,7 @@ permalink: /
             y de las torpes estrategias de sus compañeros. El espectáculo debe continuar, ¿no?</p>
         <div>
             <img src="assets/figuritas_personajes.png" alt="Personajes"
-                style="width: 100%; filter: drop-shadow(0px 4px 8px #0006); max-width: 1200px;">
+                style="width: 100vw; filter: drop-shadow(0px 4px 8px #0006); max-width: 1200px;">
         </div>
     </section>
 
@@ -77,17 +73,32 @@ permalink: /
     <section>
         <h1>PERSONAJES</h1>
 
-        <ul>
-            <li><strong>Veronica</strong> - La dueña del cabaret. Trata de mantener el recuerdo de su madre, el icono
-                del cabaret Renata Rubí, vivo a través del local, lo cual le llevará a tomar decisiones cada vez más
-                controvertidas para salvarlo.</li>
-            <li><strong>Sofía</strong> - La otra cara de la moneda de Verónica. Alcohólica funcional siempre trata de
-                evadirse y entretenerse. Más pesimista frente a la realidad, sólo está dispuesta a luchar por Verónica y
-                se verá obligada a hacerlo.</li>
-            <li><strong>El elenco</strong> - Compuesto por un grupo de jóvenes eclécticos, el resto de los artistas del
-                cabaret está dividido entre personajes realistas y otros más fantasiosos que dan lugar a divertidos
-                intentos de ayudar.</li>
-        </ul>
+        <div style="display: flex;">
+            <div>
+                <h4>Veronica</h4>
+                <p>
+                    La dueña del cabaret. Trata de mantener el recuerdo de su madre, el icono
+                    del cabaret Renata Rubí, vivo a través del local, lo cual le llevará a tomar decisiones cada vez más
+                    controvertidas para salvarlo.
+                </p>
+            </div>
+            <div>
+                <h4>Sofía</h4>
+                <p>
+                    La otra cara de la moneda de Verónica. Alcohólica funcional siempre trata de
+                    evadirse y entretenerse. Más pesimista frente a la realidad, sólo está dispuesta a luchar por Verónica y
+                    se verá obligada a hacerlo.
+                </p>
+            </div>
+            <div>
+                <h4>El elenco</h4>
+                <p>
+                    Compuesto por un grupo de jóvenes eclécticos, el resto de los artistas del
+                    cabaret está dividido entre personajes realistas y otros más fantasiosos que dan lugar a divertidos
+                    intentos de ayudar.
+                </p>
+            </div>
+        </div>
     </section>
 
 
@@ -131,7 +142,7 @@ permalink: /
 
         .slide {
             flex: 0 0 auto;
-            height: max(30vh, 30vw);
+            height: max(30vh, 20vw);
         }
 
         .slide img {
@@ -161,6 +172,13 @@ permalink: /
             if (slideshowContainer.scrollLeft + slideshowContainer.clientWidth >= slideshowContainer.scrollWidth) {
                 slideshowContainer.scrollLeft = 0;
             }
+        });
+
+        // Parallax effect
+        window.addEventListener('scroll', function() {
+            const parallaxContainer = document.querySelector('.parallax-container');
+            const scrollPosition = window.pageYOffset;
+            parallaxContainer.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
         });
     </script>
 
