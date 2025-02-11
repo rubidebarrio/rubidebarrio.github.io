@@ -8,7 +8,7 @@ permalink: /
     <header>
         <nav>
             <a href="/">
-                <img src="assets/header.png" alt="Rubi de Barrio" style="max-height: 70px;">
+                <img src="assets/header.png" alt="Rubi de Barrio" style="max-height: 70px; filter: drop-shadow(-6px -2px 8px #cb0e3cb0);">
             </a>
             
             <div>
@@ -136,8 +136,9 @@ permalink: /
         .slideshow-container {
             display: flex;
             overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
             width: 100vw;
+            -webkit-overflow-scrolling: touch;
         }
 
         .slide {
