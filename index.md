@@ -116,61 +116,6 @@ permalink: /
     <h1>FOTOS RODAJE</h1>
 
     <style>
-        .polaroid {
-            background-color: white;
-            padding: 10px;
-            padding-bottom: 50px;
-            margin: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            text-align: center;
-            width: calc(33.333% - 40px);
-        }
-
-        .polaroid img {
-            width: 100%;
-            height: auto;
-        }
-
-        .polaroid {
-            max-width: 200px;
-        }
-
-        .polaroid-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            max-width: 900px;
-        }
-
-        @media (max-width: 768px) {
-            .polaroid {
-                width: 35%;
-            }
-        }
-    </style>
-
-    <section class="polaroid-container">
-        <div class="polaroid" style="transform: rotate(2deg);">
-            <img src="assets/cat0.jpeg" alt="Cat 0">
-        </div>
-        <div class="polaroid" style="transform: rotate(0deg);">
-            <img src="assets/cat1.jpeg" alt="Cat 1">
-        </div>
-        <div class="polaroid" style="transform: rotate(-0.5deg);">
-            <img src="assets/cat0.jpeg" alt="Cat 0">
-        </div>
-        <div class="polaroid" style="transform: rotate(0.7deg);">
-            <img src="assets/cat1.jpeg" alt="Cat 1">
-        </div>
-        <div class="polaroid" style="transform: rotate(-1deg);">
-            <img src="assets/cat0.jpeg" alt="Cat 0">
-        </div>
-        <div class="polaroid" style="transform: rotate(-1deg);">
-            <img src="assets/cat1.jpeg" alt="Cat 1">
-        </div>
-    </section>
-
-    <style>
         .slideshow-container {
             display: flex;
             overflow-x: auto;
