@@ -1,25 +1,38 @@
 <style>
-    footer {
-        align-content: center;
-        align-items: center;
-        background-color: #f1f1f1;
-        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    .footer-container {
         display: flex;
-        height: 100px;
-        justify-content: center;
-        margin-left: auto;
-        margin-top: 100px;
-        padding: 20px;
-        text-align: center;
-        width: 100px;
+        justify-content: space-between;
         bottom: 0;
-        position: relative;
+        width: 100%;
+        padding: 4rem 7.5rem;
+    }
+
+    .footer-credits {
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+    }
+
+    .footer-credits p {
+        margin: 0;
+    }
+
+    .footer-credits strong {
+        font-weight: bold;
     }
 </style>
 
-<footer>
-    <div>
-        <p>🚧 WIP 🚧</p>
-        <p>&copy; 2025</p>
+<footer class="footer-container">
+    <div class="footer-credits">
+        <p>
+            <strong>Rubi de Barrio</strong> 
+            Ⓒ All rights reserved 
+            <span id="currentYear"></span>
+        </p>
     </div>
+
 </footer>
+
+<script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
