@@ -1,16 +1,30 @@
 <style>
     .footer-container {
-        display: flex;
         justify-content: space-between;
         bottom: 0;
         width: 100%;
         padding: 4rem 7.5rem;
     }
 
+    @media (max-width: 700px) {
+        .footer-container {
+            padding: 4rem 0;
+        }
+    }
+    
     .footer-credits {
         display: flex;
+        flex-direction: row;
+        gap: 1ch;
         align-items: center;
         font-weight: 300;
+        font-size: small;
+    }
+    @media (max-width: 700px) {
+        .footer-credits {
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     .footer-credits p {
@@ -24,13 +38,10 @@
 
 <footer class="footer-container">
     <div class="footer-credits">
-        <p>
-            <strong>Rubi de Barrio</strong> 
-            Ⓒ All rights reserved 
-            <span id="currentYear"></span>
+        <p><strong>Rubi de Barrio</strong></p>
+        <p>Ⓒ All rights reserved <p id="currentYear"></span>
         </p>
     </div>
-
 </footer>
 
 <script>
