@@ -2,6 +2,8 @@
     --clr_dark: #141a26;
     --clr_light: #d9e0e6;
     --max_width_1: 1500px;
+    --accent_red_1: #cb0e3c;
+    --accent_red_2: #C51040;
 }
 
 html, body {
@@ -28,14 +30,10 @@ main {
 .wrapper {
     width: 100%;
     min-height: 80vh;
-    
-    margin: 0 10vw;
-    max-width: var(--max_width_1);
     justify-items: center;
 }
 section {
     margin-bottom: 5em;
-    margin-inline: 3vw;
 }
 nav {
     display: flex;
@@ -50,7 +48,7 @@ nav a {
     text-decoration: none;
 }
 nav a:hover {
-    color: #cb0e3c;
+    color: var(--accent_red_1);
 }
 
 /* ************************************* */
@@ -81,7 +79,7 @@ nav img {
 
 .hero {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
     background-color: black;
@@ -136,7 +134,7 @@ h1 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 2em;
-    color: #cb0e3c;
+    color: var(--accent_red_1);
 }
 h1, h2, h3, h4, h5, h6, a, p, li {
     font-family: Courier, monospace;
@@ -154,7 +152,7 @@ body p {
 
 /* ************************************* */
 .rubi_btn {
-    background-color: #C51040;
+    background-color: var(--accent_red_2);
     border-radius: 7px;
     color: white;
     padding: 7px 12px;
@@ -164,12 +162,12 @@ body p {
     margin-top: 10px;
 }
 .rubi_btn:hover {
-    background-color: #e01148;
+    filter: brightness(115%);
 }
 .rubi_input {
     padding: 7px 12px;
     border-radius: 7px;
-    border: 1px solid #C51040;
+    border: 1px solid var(--accent_red_2);
     margin-top: 10px;
     color: #303030;
 }
