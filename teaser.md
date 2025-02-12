@@ -22,23 +22,26 @@ permalink: /teaser
         }
     </style>
 
-    
-    <!-- ################################################################## -->
-    <h1>TEASER</h1>
-    <div style="max-width: 720px; margin: auto;">
-        <div id="password-container">
-            <input class="rubi_input" type="password" id="password" placeholder="Enter password">
-            <button class="rubi_btn" onclick="checkPassword()">Submit</button>
-        </div>
-        <div id="video-container" style="display: none;">
-            <iframe
+
+    <section>
+
+        <!-- ################################################################## -->
+        <h1>TEASER</h1>
+        <div style="max-width: 720px; margin: auto;">
+            <div id="password-container">
+                <input class="rubi_input" type="password" id="password" placeholder="Enter password">
+                <button class="rubi_btn" onclick="checkPassword()">Submit</button>
+            </div>
+            <div id="video-container" style="display: none;">
+                <iframe
                 max-width="1080" frameborder="0" allowfullscreen
                 class="video"
                 iv_load_policy="3"
                 src="https://www.youtube.com/embed/ngMNZAJsP0c?modestbranding=1&rel=0&controls=0"
                 origin="RubideBarrio" widget_referrer="RubideBarrio"></iframe>
+            </div>
         </div>
-    </div>
+    </section>
     
         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>

@@ -8,7 +8,7 @@ permalink: /
     <header>
         <nav>
             <a href="/">
-                <img src="assets/header.png" alt="Rubi de Barrio" style="max-height: 70px; filter: drop-shadow(-6px -2px 8px #cb0e3cb0);">
+                <img class="header-logo" src="assets/header.png" alt="Rubi de Barrio" style="max-height: 70px; filter: drop-shadow(-6px -2px 8px #cb0e3cb0);">
             </a>
             
             <div>
@@ -73,7 +73,7 @@ permalink: /
     <section>
         <h1>PERSONAJES</h1>
 
-        <div style="display: flex;">
+        <div>
             <div>
                 <h4>Veronica</h4>
                 <p>
