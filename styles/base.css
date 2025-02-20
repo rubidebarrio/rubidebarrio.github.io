@@ -2,6 +2,7 @@
     --clr_dark: #141a26;
     --clr_light: #d9e0e6;
     --max_width_1: 80rem;
+    --max_width_2: 60rem;
     --accent_red_1: #cb0e3c;
     --accent_red_2: #C51040;
 }
@@ -53,14 +54,6 @@ nav a:hover {
 }
 
 /* ************************************* */
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: transparent;
-    z-index: 10; /* Ensure the header is on top */
-}
 .header-logo {
     max-height: 70px;
     filter: drop-shadow(-6px -2px 8px #cb0e3cb0);

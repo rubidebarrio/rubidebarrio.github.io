@@ -6,9 +6,19 @@ permalink: /
 
 <body>
     <header>
+        <style>
+            header {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: transparent;
+                z-index: 10; /* Ensure the header is on top */
+            }
+        </style>
         <nav>
             <a href="/">
-                <img class="header-logo" src="assets/header.png" alt="Rubi de Barrio" style="max-height: 70px; filter: drop-shadow(-6px -2px 8px #cb0e3cb0);">
+                <img class="header-logo" src="assets/header.png" alt="Rubi de Barrio">
             </a>
             
             <div>
