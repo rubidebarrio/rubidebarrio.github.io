@@ -31,9 +31,9 @@ permalink: /
     </section>
 
 
-    <div>
-        <img src="assets/tablero_cluedo.png" alt="Bucle Bodegones" style="width: 90vw; max-width: 100rem;">
-    </div>
+    <section>
+        <img src="assets/tablero_cluedo.png" alt="Bucle Bodegones" style="width: 100%;">
+    </section>
 
 
     <!-- ################################################################## -->
@@ -64,7 +64,7 @@ permalink: /
             y de las torpes estrategias de sus compañeros. El espectáculo debe continuar, ¿no?</p>
         <div>
             <img src="assets/figuritas_personajes.png" alt="Personajes"
-                style="width: 100%; filter: drop-shadow(0px 4px 8px #0006); max-width: 1200px;">
+                style="width: 100%;">
         </div>
     </section>
 
@@ -139,6 +139,7 @@ permalink: /
             scrollbar-width: none;
             width: 100%;
             -webkit-overflow-scrolling: touch;
+            max-width: fit-content;
         }
 
         .slide {
@@ -176,11 +177,11 @@ permalink: /
         });
 
         // Parallax effect
-        window.addEventListener('scroll', function() {
-            const parallaxContainer = document.querySelector('.parallax-container');
-            const scrollPosition = window.pageYOffset;
-            parallaxContainer.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
-        });
+        // window.addEventListener('scroll', function() {
+        //     const parallaxContainer = document.querySelector('.parallax-container');
+        //     const scrollPosition = window.pageYOffset;
+        //     parallaxContainer.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
+        // });
     </script>
 
 

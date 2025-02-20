@@ -1,7 +1,7 @@
 :root {
     --clr_dark: #141a26;
     --clr_light: #d9e0e6;
-    --max_width_1: 1500px;
+    --max_width_1: 80rem;
     --accent_red_1: #cb0e3c;
     --accent_red_2: #C51040;
 }
@@ -34,6 +34,7 @@ main {
 }
 section {
     margin-bottom: 5em;
+    max-width: var(--max_width_1);
 }
 nav {
     display: flex;
@@ -65,57 +66,6 @@ header {
     filter: drop-shadow(-6px -2px 8px #cb0e3cb0);
 }
 
-.hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background-color: black;
-}
-
-.parallax-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    perspective: 1px;
-    z-index: 0;
-}
-
-.hero-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: auto;
-    height: 85vh;
-    max-width: none;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-/*
-.hero-content {
-    position: absolute;
-    text-align: center;
-}
-.hero-content h1 {
-    color: white;
-    font-size: xxx-large;
-    text-align: justify;
-}
-*/
-
 /* ************************************* */
 h1 {
     text-align: center;
@@ -130,7 +80,6 @@ h1, h2, h3, h4, h5, h6, a, p, li {
 }
 
 body p {
-    max-width: 90ch;
     justify-self: center;
     text-align: justify;
     margin: 0 1.2rem;
