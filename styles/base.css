@@ -60,9 +60,13 @@ nav a:hover {
 }
 
 /* ************************************* */
+@font-face {
+    font-family: 'Bohemian Soul';
+    src: url('fonts/Bohemian_Soul.otf') format('opentype');
+}
 h1 {
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Bohemian Soul', 'Courier New', Courier, monospace;
     font-size: 2em;
     color: var(--accent_red_1);
 }
