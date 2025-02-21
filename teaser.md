@@ -51,7 +51,7 @@ permalink: /teaser
 
     <!-- ################################################################## -->
     <section>
-        <h1>TEASER</h1>
+        <h1>Teaser</h1>
         <div>
             <div id="password-container" style="margin: 20px auto;">
                 <input class="rubi_input" type="password" id="password" placeholder="Enter password">

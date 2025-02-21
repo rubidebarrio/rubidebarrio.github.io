@@ -48,7 +48,7 @@ permalink: /
 
     <!-- ################################################################## -->
     <section>
-        <h1>DESCRIPCIÓN</h1>
+        <h1>Descripción</h1>
         <p>
             Rubí de Barrio es una serie de género comedia/misterio creada por Paula Mañeru y Paula Sanz. Inspirada en
             una obra teatral producida en nuestra adolescencia, el proyecto comenzó tanto como un desafío para nosotras
@@ -67,7 +67,7 @@ permalink: /
     <!-- ################################################################## -->
     <section>
 
-        <h1>SINOPSIS</h1>
+        <h1>Sinopsis</h1>
         <p>Sepultadas bajo montañas de facturas por pagar, Verónica, Sofía y su séquito de mamarrachas del (ahora)
             decadente Cabaret Rubí arriesgan sus vidas al encontrarse un cliente muerto en el club. Con la policía
             en los talones y un cadáver en la nevera, Verónica hace todo lo posible por salvar su local de la ruina
@@ -81,7 +81,7 @@ permalink: /
 
     <!-- ################################################################## -->
     <section>
-        <h1>PERSONAJES</h1>
+        <h1>Personajes</h1>
 
         <div>
             <div>
@@ -116,7 +116,7 @@ permalink: /
     <!-- ################################################################## -->
     <section>
 
-        <h1>¿QUIENES SOMOS?</h1>
+        <h1>¿Quienes somos?</h1>
         <p>
             ¡Hola! Soy Paula (Mañeru). Nací en el 97, así que llevo 27 años aferrándome a todo estímulo creativo y
             enganchada a la purpurina. Empecé a hacer teatro desde pequeña (ahí me encontré a Paula) y, cuando crecí,
@@ -140,7 +140,7 @@ permalink: /
 
 
     <!-- ################################################################## -->
-    <h1>FOTOS RODAJE</h1>
+    <h1>Fotos rodaje</h1>
 
     <style>
         .slideshow-container {

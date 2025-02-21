@@ -62,18 +62,24 @@ nav a:hover {
 /* ************************************* */
 @font-face {
     font-family: 'Bohemian Soul';
-    src: url('fonts/Bohemian_Soul.otf') format('opentype');
+    src: url('/assets/fonts/Bohemian_Soul.otf') format('opentype');
+}
+h1, h2, h3, h4, h5, h6, a, p, li {
+    padding: 1.5em 0 1em;
+    margin: 0;
+    font-variant-caps: petite-caps;
 }
 h1 {
     text-align: center;
-    font-family: 'Bohemian Soul', 'Courier New', Courier, monospace;
     font-size: 2em;
     color: var(--accent_red_1);
 }
-h1, h2, h3, h4, h5, h6, a, p, li {
-    font-family: Courier, monospace;
-    padding: 1.5em 0 1em;
-    margin: 0;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bohemian Soul', Courier;
+}
+
+a, p, li {
+    font-family: Helvetica, Courier;
 }
 
 body p {
