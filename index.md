@@ -145,11 +145,16 @@ permalink: /
     <style>
         .slideshow-container {
             display: flex;
-            overflow-x: auto;
+            overflow-x: auto; /* Allow user-driven scrolling */
             scrollbar-width: none;
             width: 100%;
             -webkit-overflow-scrolling: touch;
-            max-width: fit-content;
+            position: relative;
+        }
+
+        .slideshow-track {
+            display: flex;
+            /* Removed animation for user-driven scrolling */
         }
 
         .slide {
@@ -159,40 +164,46 @@ permalink: /
 
         .slide img {
             height: 100%;
-            scrollbar-width: none;
-            /* For Firefox */
-            -ms-overflow-style: none;
-            /* For Internet Explorer and Edge */
             width: auto;
             display: block;
         }
     </style>
 
     <section class="slideshow-container">
-        <img class="slide" src="assets/polaroid/slide1.png" alt="Polaroid slide 1">
-        <img class="slide" src="assets/polaroid/slide2.png" alt="Polaroid slide 2">
-        <img class="slide" src="assets/polaroid/slide3.png" alt="Polaroid slide 3">
-        <img class="slide" src="assets/polaroid/slide4.png" alt="Polaroid slide 4">
-        <img class="slide" src="assets/polaroid/slide5.png" alt="Polaroid slide 5">
-        <img class="slide" src="assets/polaroid/slide6.png" alt="Polaroid slide 6">
+        <div class="slideshow-track">
+            <img class="slide" src="assets/polaroid/slide1.png" alt="Polaroid slide 1">
+            <img class="slide" src="assets/polaroid/slide2.png" alt="Polaroid slide 2">
+            <img class="slide" src="assets/polaroid/slide3.png" alt="Polaroid slide 3">
+            <!-- <img class="slide" src="assets/polaroid/slide4.png" alt="Polaroid slide 4">
+            <img class="slide" src="assets/polaroid/slide5.png" alt="Polaroid slide 5">
+            <img class="slide" src="assets/polaroid/slide6.png" alt="Polaroid slide 6"> -->
+        </div>
     </section>
 
     <script>
-        const slideshowContainer = document.querySelector('.slideshow-container');
+        const container = document.querySelector('.slideshow-container');
+        const track = document.querySelector('.slideshow-track');
 
-        slideshowContainer.addEventListener('scroll', () => {
-            if (slideshowContainer.scrollLeft + slideshowContainer.clientWidth >= slideshowContainer.scrollWidth) {
-                slideshowContainer.scrollLeft = 0;
+        container.addEventListener('scroll', () => {
+            const scrollLeft = container.scrollLeft;
+            const scrollWidth = container.scrollWidth;
+            const clientWidth = container.clientWidth;
+
+            // Check if scrolled to the end
+            if (scrollLeft + clientWidth >= scrollWidth - 10) {
+                // Duplicate the track
+                const newTrack = track.cloneNode(true);
+                container.appendChild(newTrack);
+
+                // Remove the leftmost track if there are more than 2 tracks
+                const tracks = container.querySelectorAll('.slideshow-track');
+                if (tracks.length > 3) {
+                    container.removeChild(tracks[0]);
+                }
             }
         });
-
-        // Parallax effect
-        // window.addEventListener('scroll', function() {
-        //     const parallaxContainer = document.querySelector('.parallax-container');
-        //     const scrollPosition = window.pageYOffset;
-        //     parallaxContainer.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
-        // });
     </script>
+
 
 
 </body>
